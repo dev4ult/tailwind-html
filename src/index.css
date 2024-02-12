@@ -5,14 +5,44 @@
 @supports not (color: oklch(0 0 0)) {
   :root {
     color-scheme: light;
-    --fallback-p: #2267e6;
+    --fallback-p: #000000;
     --fallback-pc: #d4dbff;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       color-scheme: dark;
-      --fallback-p: #2267e6;
+      --fallback-p: #000000;
       --fallback-pc: #d4dbff;
     }
   }
+}
+
+.screen-fit {
+  @apply md:min-h-screen;
+  @apply flex;
+  @apply flex-col;
+  @apply justify-center;
+}
+
+.container-fit {
+  @apply container;
+  @apply max-w-6xl;
+  @apply mx-auto;
+  @apply px-5;
+}
+
+.section {
+  @apply md:py-20;
+  @apply py-14;
+}
+
+.h-section {
+  @apply font-bold;
+  @apply md:text-3xl;
+  @apply text-2xl;
+}
+
+.p-section {
+  @apply font-medium;
+  @apply md:text-lg;
 }

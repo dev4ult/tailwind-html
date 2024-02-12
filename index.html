@@ -5,9 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind HTML</title>
     <link rel="stylesheet" href="/public/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="text-xl">Hello World</div>
-    <button type="button" class="btn btn-primary">this is a button</button>
+    <!-- HERO SECTION -->
+    <main class="screen-fit">
+      <div class="container-fit section flex flex-col md:flex-row gap-5 items-center justify-between">
+        <div>
+          <h1 class="text-3xl md:text-5xl font-bold">Tailwind X HTML</h1>
+          <p class="font-medium text-lg mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto in quod enim! Optio dicta voluptatum pariatur, tenetur error ad repellat.</p>
+          <div class="flex flex-wrap gap-3 mt-4">
+            <a href="https://github.com/dev4ult/tailwind-html" class="btn btn-primary">
+              <span>Try Now</span>
+              <i class="ri-rocket-line"></i>
+            </a>
+            <button type="button" class="btn btn-primary btn-outline">
+              <span>Learn More</span>
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+        <img src="https://source.unsplash.com/random/?mountain" alt="" class="h-96 w-[30rem] rounded-xl object-cover" />
+      </div>
+    </main>
   </body>
 </html>
