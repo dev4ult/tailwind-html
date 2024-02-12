@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 :root {
-  --fallback-p: 'black';
+  --fallback-p: '#fcba03';
 }
