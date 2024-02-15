@@ -17,6 +17,10 @@
   }
 }
 
+* {
+  font-family: 'Anybody', sans-serif;
+}
+
 .screen-fit {
   @apply md:min-h-screen;
   @apply flex;
@@ -45,4 +49,14 @@
 .p-section {
   @apply font-medium;
   @apply md:text-lg;
+}
+
+.reveal {
+  @apply overflow-hidden;
+  @apply relative;
+  @apply w-fit;
+}
+
+.hero-text {
+  @apply pt-3;
 }
